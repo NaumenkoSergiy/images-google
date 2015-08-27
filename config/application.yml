@@ -1,0 +1,12 @@
+default: &default
+  GOOGLE_CLIENT_ID: 831320260608-u23q67vgfn33amjjj9fbqefbi4sfd035.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET:  f-qTRUGD0swmjg7vRA1bSkeY
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
