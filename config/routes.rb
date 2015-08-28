@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     get 'authorization_code', controller: 'users/omniauth_callbacks', action: :authorization_code
   end
 
-  resources :photos, only: :destroy
+  resources :photos, only: [:destroy, :new, :create]
 end

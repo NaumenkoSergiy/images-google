@@ -9,6 +9,7 @@
   <% @albums.each do |album| %>
     <p>
       <h2><%= album.title %></h2>
+      <%= link_to 'Add photo', new_photo_path(album_id: album.id) %>
       <% client.album.show(album.id).entries.each do |photo| %>
         <h3><%= photo.title %></h3>
         <%= image_tag photo.media.cover_photo_url %>
