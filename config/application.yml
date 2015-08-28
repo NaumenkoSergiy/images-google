@@ -13,6 +13,6 @@ test:
   ACCESS_TOKEN: ya29.3QFCID0adfMDK5egRJuUPo-a5b10tU8GhCnc0UGL-yPrGLqdziqM-PdKYdG_OAS6JW-O
 
 production:
-   GOOGLE_CLIENT_ID: 831320260608-82epjq6mlhle3km9isd5ssmvruq5knjr.apps.googleusercontent.com
-   GOOGLE_CLIENT_SECRET: igE7CaWeDseXU8KHJNLan4W9
-   AUTH_REDIRECT_URL: http://google-images.herokuapp.com/authorization_code
+  GOOGLE_CLIENT_ID: 831320260608-82epjq6mlhle3km9isd5ssmvruq5knjr.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: igE7CaWeDseXU8KHJNLan4W9
+  AUTH_REDIRECT_URL: http://google-images.herokuapp.com/authorization_code

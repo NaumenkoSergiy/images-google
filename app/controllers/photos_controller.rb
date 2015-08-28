@@ -27,6 +27,6 @@ class PhotosController < ApplicationController
   private
 
   def check_authorization_code
-    redirect_to authorization_code_url if session[:code].nil?
+    redirect_to code_authorization_url if session[:code].nil?
   end
 end

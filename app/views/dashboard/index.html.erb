@@ -4,7 +4,7 @@
 
   <br><br>
   <% if session[:code].nil? %>
-    <%= link_to 'Get authorization code', authorization_code_url, class: 'btn btn-primary' %>
+    <%= link_to 'Get authorization code', code_authorization_url, class: 'btn btn-primary' %>
   <% end %>
   <% @albums.each do |album| %>
     <p>
