@@ -1,7 +1,7 @@
 default: &default
   GOOGLE_CLIENT_ID: 831320260608-p4593a46j8tjsbesp2o1dc46ev13mbd8.apps.googleusercontent.com
   GOOGLE_CLIENT_SECRET: l6m2sVrQ_7K3IVsg7ax39dJW
-  GOOGLE_CLIENT_CODE: 4/SsTk5jsLAd1Y4kEBtrtBl7-Hdp52PDQKKt6USPbTFrk
+  GOOGLE_CLIENT_CODE: 4/2oab4jE5AVGeRD6h4y3skCwpIX9Y--2nbtiWYpzxf1o
 
 development:
   <<: *default

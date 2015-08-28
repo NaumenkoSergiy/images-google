@@ -1,15 +1,18 @@
 <% if current_user %>
   <%= current_user.name %> ( <%= current_user.email %> )
-  <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+  <%= link_to 'Sign out', destroy_user_session_path %>
 
   <br><br>
-
+  <% if session[:code].nil? %>
+    <%= link_to 'Get code', "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=http://localhost:3000/authorization_code&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" %>
+  <% end %>
   <% @albums.each do |album| %>
     <p>
       <h2><%= album.title %></h2>
       <% client.album.show(album.id).entries.each do |photo| %>
         <h3><%= photo.title %></h3>
         <%= image_tag photo.media.cover_photo_url %>
+        <%= link_to 'Delete photo', photo_path(photo.id, album_id: album.id), method: :delete %>
       <% end %>
     </p>
     <hr>
