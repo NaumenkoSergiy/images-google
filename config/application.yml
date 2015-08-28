@@ -11,4 +11,5 @@ test:
   GOOGLE_CLIENT_CODE: 4/O6FjufxVN73Cb2UF4STkSc6MO6WnyIDYE2z-CcAt-cQ
 
 production:
-  <<: *default
+   GOOGLE_CLIENT_ID: 831320260608-82epjq6mlhle3km9isd5ssmvruq5knjr.apps.googleusercontent.com
+   GOOGLE_CLIENT_SECRET: igE7CaWeDseXU8KHJNLan4W9
