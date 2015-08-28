@@ -12,7 +12,7 @@ class PicasaImages
       token_credential_uri: 'https://www.googleapis.com/oauth2/v3/token',
       client_id: ENV['GOOGLE_CLIENT_ID'],
       client_secret: ENV['GOOGLE_CLIENT_SECRET'],
-      redirect_uri: 'http://localhost:3000/authorization_code'
+      redirect_uri: "#{ENV['AUTH_REDIRECT_URL']}/"
     )
 
     signet.fetch_access_token!
