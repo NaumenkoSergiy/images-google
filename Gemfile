@@ -14,6 +14,8 @@ gem 'picasa'
 gem 'omniauth-google-oauth2'
 gem 'devise'
 gem 'pry'
+gem 'picasa'
+gem 'signet'
 
 group :development, :test do
   gem 'byebug'

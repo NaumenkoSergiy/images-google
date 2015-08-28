@@ -1,6 +1,19 @@
 <% if current_user %>
   <%= current_user.name %> ( <%= current_user.email %> )
   <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+
+  <br><br>
+
+  <% @albums.each do |album| %>
+    <p>
+      <h2><%= album.title %></h2>
+      <% client.album.show(album.id).entries.each do |photo| %>
+        <h3><%= photo.title %></h3>
+        <%= image_tag photo.media.cover_photo_url %>
+      <% end %>
+    </p>
+    <hr>
+  <% end %>
 <% else %>
   <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
 <% end %>

@@ -1,12 +1,14 @@
 default: &default
-  GOOGLE_CLIENT_ID: 831320260608-u23q67vgfn33amjjj9fbqefbi4sfd035.apps.googleusercontent.com
-  GOOGLE_CLIENT_SECRET:  f-qTRUGD0swmjg7vRA1bSkeY
+  GOOGLE_CLIENT_ID: 831320260608-p4593a46j8tjsbesp2o1dc46ev13mbd8.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: l6m2sVrQ_7K3IVsg7ax39dJW
+  GOOGLE_CLIENT_CODE: 4/SsTk5jsLAd1Y4kEBtrtBl7-Hdp52PDQKKt6USPbTFrk
 
 development:
   <<: *default
 
 test:
   <<: *default
+  GOOGLE_CLIENT_CODE: 4/O6FjufxVN73Cb2UF4STkSc6MO6WnyIDYE2z-CcAt-cQ
 
 production:
   <<: *default
