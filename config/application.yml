@@ -2,7 +2,7 @@ default: &default
   GOOGLE_CLIENT_ID: 831320260608-p4593a46j8tjsbesp2o1dc46ev13mbd8.apps.googleusercontent.com
   GOOGLE_CLIENT_SECRET: l6m2sVrQ_7K3IVsg7ax39dJW
   GOOGLE_CLIENT_CODE: 4/2oab4jE5AVGeRD6h4y3skCwpIX9Y--2nbtiWYpzxf1o
-  AUTH_REDIRECT_URL: http://localhost:3000/authorization_code/
+  AUTH_REDIRECT_URL: http://localhost:3000/authorization_code
 
 development:
   <<: *default
@@ -14,4 +14,4 @@ test:
 production:
    GOOGLE_CLIENT_ID: 831320260608-82epjq6mlhle3km9isd5ssmvruq5knjr.apps.googleusercontent.com
    GOOGLE_CLIENT_SECRET: igE7CaWeDseXU8KHJNLan4W9
-   AUTH_REDIRECT_URL: http://google-images.herokuapp.com/authorization_code/
+   AUTH_REDIRECT_URL: http://google-images.herokuapp.com/authorization_code
