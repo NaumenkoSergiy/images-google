@@ -4,7 +4,6 @@ class PhotosController < ApplicationController
   def destroy
     client.photo.destroy(params[:album_id], params[:id])
     redirect_to root_path
-    redirect_to "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=http://localhost:3000/authorization_code&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}"
   end
 
   def new; end
@@ -28,6 +27,6 @@ class PhotosController < ApplicationController
   private
 
   def check_authorization_code
-    redirect_to "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=http://localhost:3000/authorization_code&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" if session[:code].nil?
+    redirect_to "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=#{ENV['AUTH_REDIRECT_URL']}&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" if session[:code].nil?
   end
 end

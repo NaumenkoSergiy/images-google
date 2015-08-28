@@ -4,7 +4,7 @@
 
   <br><br>
   <% if session[:code].nil? %>
-    <%= link_to 'Get code', "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=http://localhost:3000/authorization_code&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" %>
+    <%= link_to 'Get code', "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=#{ENV['AUTH_REDIRECT_URL']}&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" %>
   <% end %>
   <% @albums.each do |album| %>
     <p>
