@@ -27,6 +27,6 @@ class PhotosController < ApplicationController
   private
 
   def check_authorization_code
-    redirect_to "https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=#{ENV['AUTH_REDIRECT_URL']}/&response_type=code&client_id=#{ENV['GOOGLE_CLIENT_ID']}" if session[:code].nil?
+    redirect_to authorization_code_url if session[:code].nil?
   end
 end

@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def redirect_if_error
-    redirect_to root_path
+    redirect_to root_path unless params[:controller] == 'dashboard'
   end
 end
