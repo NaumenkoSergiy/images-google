@@ -3,3 +3,16 @@
 This is Picasaweb viewer build using RoR.
 
 Link to Heroku app: http://google-images.herokuapp.com/
+
+== TESTS
+
+- Craft URL replacing YOUR_CLIENT_ID https://accounts.google.com/o/oauth2/auth?scope=http://picasaweb.google.com/data/&redirect_uri=urn:ietf:wg:oauth:2.0:oob&response_type=code&client_id=YOUR_CLIENT_ID
+- Visit URL, grant access to your account and note code
+
+- Run tests:
+
+  rake test CODE='code which you noted'
+
+  OR
+
+  rake test:controllers TEST=path/to/specific/test/file CODE='code which you noted'

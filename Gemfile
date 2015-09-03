@@ -24,5 +24,9 @@ group :development, :test do
   gem 'spring'
   gem 'faker'
   gem 'minitest-rails-capybara'
+  gem 'oauth2-provider', git: 'git@github.com:tiabas/oauth2-provider.git'
+  gem 'vcr'
+  gem 'mocha'
+  gem 'minitest-bang', require: false
 end
 

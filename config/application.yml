@@ -11,6 +11,7 @@ test:
   <<: *default
   GOOGLE_CLIENT_CODE: 4/O6FjufxVN73Cb2UF4STkSc6MO6WnyIDYE2z-CcAt-cQ
   ACCESS_TOKEN: ya29.3QFCID0adfMDK5egRJuUPo-a5b10tU8GhCnc0UGL-yPrGLqdziqM-PdKYdG_OAS6JW-O
+  AUTH_REDIRECT_URL: urn:ietf:wg:oauth:2.0:oob
 
 production:
   GOOGLE_CLIENT_ID: 831320260608-82epjq6mlhle3km9isd5ssmvruq5knjr.apps.googleusercontent.com
